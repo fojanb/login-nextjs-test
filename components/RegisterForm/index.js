@@ -6,7 +6,7 @@ export const RegisterForm = () => {
   // -------------------------------------------*
   const emailHandler = (e) => {
     let email = e.target.value;
-    setUsername(email);
+    setEmail(email);
   };
   const usernameHandler = (e) => {
     let name = e.target.value;
@@ -19,6 +19,7 @@ export const RegisterForm = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     console.log(`Email: ${email} | Username: ${username} | Password: ${password}`);
+    
   };
   // -------------------------------------------*
   return (
